@@ -5,6 +5,8 @@ using namespace std;
 int main(int argc, char const *argv[])
 {
     cout << "hello" << endl;
-    vector<int> vi(10);
+    vector<int> vi = {1, 2, 3};
+    for (auto v : vi) 
+        cout << v << " ";
     return 0;
 }
