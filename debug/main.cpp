@@ -27,7 +27,8 @@ bool traversal(ListNode* cur) {
 }
 int main(int argc, char const *argv[])
 {
-    ListNode* node3 = new ListNode(1, nullptr);
+    ListNode* node4 = new ListNode(4, nullptr);
+    ListNode* node3 = new ListNode(node4, nullptr);
     ListNode* node2 = new ListNode(2, node3);
     ListNode* node1 = new ListNode(1, node2);
     ListNode* head = node1;
