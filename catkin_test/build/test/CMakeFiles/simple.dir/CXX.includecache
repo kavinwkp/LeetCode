@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kavin/ROSProjects/catkin_test/Modules/test/include/test/simple.h
+iostream
+-
+
+/home/kavin/ROSProjects/catkin_test/Modules/test/src/simple.cpp
+test/simple.h
+/home/kavin/ROSProjects/catkin_test/Modules/test/src/test/simple.h
+

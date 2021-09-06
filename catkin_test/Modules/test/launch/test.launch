@@ -1,0 +1,31 @@
+<launch>
+
+  <!-- <node pkg="test" name="talker" type="talker" /> -->
+  <!-- <node pkg="test" name="web_cam" type="web_cam" output="screen"/> -->
+
+  <!-- <arg name="rate_hz" default="10"/> -->
+  <!-- <node pkg="test" name="listener" type="listener" output="screen" >
+    <param name="rate_hz" value="5" />
+  </node> -->
+
+  <!-- <arg name="gui" default="false"/>
+  <arg name="debug" default="false"/>
+  <arg name="verbose" default="false"/>
+  <arg name="paused" default="false"/>
+  <arg name="respawn_gazebo" default="false"/>
+  <arg name="world" default="$(find test)/worlds/outdoor3.world"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="gui" value="$(arg gui)"/>
+    <arg name="debug" value="$(arg debug)"/>
+    <arg name="verbose" value="$(arg verbose)"/>
+    <arg name="paused" value="$(arg paused)"/>
+    <arg name="respawn_gazebo" value="$(arg respawn_gazebo)"/>
+    <arg name="world_name" value="$(arg world)"/>
+  </include> -->
+
+  <!-- <node pkg="test" name="att" type="att" /> -->
+
+  <!-- <node type="rviz" name="rviz" pkg="rviz" args="-d $(find test)/config/rviz.rviz" /> -->
+  <node type="image_pub" name="image_pub_node" pkg="test" output="screen" />
+  <!-- <node type="image_sub" name="image_sub_node" pkg="test" output="screen" /> -->
+</launch>

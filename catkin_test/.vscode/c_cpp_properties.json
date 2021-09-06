@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/kavin/ROSProjects/catkin_test/devel/include/**",
+        "/home/kavin/ROSProjects/Prometheus/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/FastPlanner/bspline_opt/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/FastPlanner/path_searching/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/FastPlanner/plan_env/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/control/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Simulator/gazebo_simulator/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/global_planning/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/hybrid_astar/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/local_planner/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/mission/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/FastPlanner/plan_manage/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/Utils/pose_utils/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/slam/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/ground_station/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/swarm_planning/include/**",
+        "/home/kavin/ROSProjects/catkin_test/Modules/test/include/**",
+        "/home/kavin/ROSProjects/Prometheus/Modules/planning/FastPlanner/traj_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
