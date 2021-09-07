@@ -4,14 +4,14 @@ project(MAIN)
 set(CMAKE_BUILD_TYPE Debug)
 set(OpenCV_DIR "~/Library/opencv-3.3.1/build/installed/share/OpenCV/")
 find_package(OpenCV REQUIRED)
+# find_package(realsense2 REQUIRED)
 
-message("${OpenCV_INCLUDE_DIRS}")
-# /usr/include
-
-message("${OpenCV_LIBRARY_DIRS}")
-# /usr/include/opencv
-
+# message("${OpenCV_INCLUDE_DIRS}")
+# message("${OpenCV_LIBRARY_DIRS}")
 # message("${OpenCV_LIBS}")
+
+include_directories(${OpenCV_INCLUDE_DIRS} )
+# include_directories(${realsense2_INCLUDE_DIRS})
 
 add_executable(main main.cpp)
 

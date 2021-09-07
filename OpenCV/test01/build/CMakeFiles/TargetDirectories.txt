@@ -1,3 +1,3 @@
-/home/kavin/algorithm/OpenCV/test01/build/CMakeFiles/rebuild_cache.dir
-/home/kavin/algorithm/OpenCV/test01/build/CMakeFiles/main.dir
-/home/kavin/algorithm/OpenCV/test01/build/CMakeFiles/edit_cache.dir
+/home/kavin/algorithm/LeetCode/OpenCV/test01/build/CMakeFiles/rebuild_cache.dir
+/home/kavin/algorithm/LeetCode/OpenCV/test01/build/CMakeFiles/main.dir
+/home/kavin/algorithm/LeetCode/OpenCV/test01/build/CMakeFiles/edit_cache.dir

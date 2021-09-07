@@ -39,7 +39,7 @@ int main(int argc, char** argv)
         ros::spinOnce();
         sum = res1 * res1 + res2 * res2;
         ROS_WARN("Sum: %f", sum);
-        // _test_class.info();
+        _test_class.info();
         result.data = sum;
         ret_pub.publish(result);
         loop_rate.sleep();

@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 import cv2 as cv
 
 src = cv.imread("/home/kavin/Pictures/test.png")
