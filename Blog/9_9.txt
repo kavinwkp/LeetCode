@@ -1,0 +1,6 @@
+rosbag record -o bag_name /topic1 /topic2
+rosbag info bag_name
+rosbag play bag_name
+
+rostopic echo /test/Position | tee Position.yaml
+rosbag play --immediate test.bag --topics /test/Position
