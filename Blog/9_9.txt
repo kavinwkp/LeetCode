@@ -4,3 +4,10 @@ rosbag play bag_name
 
 rostopic echo /test/Position | tee Position.yaml
 rosbag play --immediate test.bag --topics /test/Position
+
+
+r = [x y z]
+
+[r] = [[0 -z y],
+       [z 0 -x],
+       [-y x 0]]
