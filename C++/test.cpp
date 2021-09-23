@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <queue>
 using namespace std;
 
 struct ListNode {
@@ -17,26 +18,11 @@ void dispListNode(ListNode *head) {
     }
 }
 
-// int add = 1;
-// void addOne(ListNode *head) {
-//     if (!head) return;
-//     addOne(head->next);
-//     head->val += add;
-//     add++;
-// }
-
-// int main() {
-//     ListNode *node3 = new ListNode(3);
-//     ListNode *node2 = new ListNode(2, node3);
-//     ListNode *node1 = new ListNode(1, node2);
-//     ListNode *head = node1;
-//     disp(head);
-//     cout << endl;
-//     addOne(head);
-//     disp(head);
-//     cout << endl;
-//     return 0;
-// }
+void revDispListNode(ListNode *head) {
+    if (!head) return;
+    revDispListNode(head->next);
+    cout << head->val << " ";
+}
 
 // struct TreeNode
 // {
@@ -83,7 +69,30 @@ int main(int argc, char const *argv[])
 {
     vector<int> nums = {1, 2, 3, 4};
     ListNode *head = getListNode(nums);
-    dispListNode(head);
+    // dispListNode(head);
+    revDispListNode(head);
     cout << endl;
+    // pair<int, int> q1(1, 2);
+    // pair<int, int> q2(10, 2);
+    // pair<int, int> q3(5, 0);
+    // priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> q;
+    // q.push(q1);
+    // q.push(q2);
+    // q.push(q3);
+    // cout << q.top().first << endl;
+    // q.pop();
+    // cout << q.top().first << endl;
+    // q.pop();
+    // cout << q.top().first << endl;
+
+    // vector<int> nums = {2, 2, 2, 2, 3, 3, 3};
+    // int res = 0;
+    // int cnt = 1;
+    // for (uint32_t i = 1; i < nums.size(); i++) {
+    //     if (nums[i] == nums[i - 1]) cnt++;
+    //     else cnt = 1;
+    //     res = max(res, cnt);
+    // }
+    // cout << res << endl;
     return 0;
 }
