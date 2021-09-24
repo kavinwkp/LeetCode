@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
+#include <unordered_set>
 using namespace std;
 
 struct ListNode {
@@ -67,11 +68,11 @@ ListNode* getListNode(vector<int>& nums) {
 
 int main(int argc, char const *argv[])
 {
-    vector<int> nums = {1, 2, 3, 4};
-    ListNode *head = getListNode(nums);
+    // vector<int> nums = {1, 2, 3, 4};
+    // ListNode *head = getListNode(nums);
     // dispListNode(head);
-    revDispListNode(head);
-    cout << endl;
+    // revDispListNode(head);
+    // cout << endl;
     // pair<int, int> q1(1, 2);
     // pair<int, int> q2(10, 2);
     // pair<int, int> q3(5, 0);
@@ -94,5 +95,13 @@ int main(int argc, char const *argv[])
     //     res = max(res, cnt);
     // }
     // cout << res << endl;
+    // int a = -2;
+    // int b = a % 10;
+    // cout << b << endl;
+    unordered_set<int> hash;
+    hash.insert(10);
+    auto it = hash.find(10);
+    cout << sizeof(it) << endl;
+    cout << sizeof(short) << endl;
     return 0;
 }
