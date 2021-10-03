@@ -98,10 +98,12 @@ int main(int argc, char const *argv[])
     // int a = -2;
     // int b = a % 10;
     // cout << b << endl;
-    unordered_set<int> hash;
-    hash.insert(10);
-    auto it = hash.find(10);
-    cout << sizeof(it) << endl;
-    cout << sizeof(short) << endl;
+    // unordered_set<int> hash;
+    // hash.insert(10);
+    // auto it = hash.find(10);
+    // cout << sizeof(it) << endl;
+    // cout << sizeof(short) << endl;
+    vector<int> res;
+    cout << res.empty() << endl;
     return 0;
 }

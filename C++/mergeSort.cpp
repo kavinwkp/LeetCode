@@ -13,15 +13,15 @@ void merge(vector<int>& nums, int l, int mid, int r) {
             res[cnt++] = nums[p2++];
     }
     while (p1 <= mid) res[cnt++] = nums[p1++];
-    while (p2 <= l) res[cnt++] = nums[p2++];
+    while (p2 <= r) res[cnt++] = nums[p2++];
     for (uint32_t i = 0; i < res.size(); i++) {
         nums[i + l] = res[i];
     }
 }
 
 void mergeSort(vector<int>& nums, int l, int r) {
-    if (left >= right) return;
-    int mid = (l + r) >> 1;
+    if (l >= r) return;
+    int mid = (l + r) / 2;
     mergeSort(nums, l, mid);
     mergeSort(nums, mid + 1, r);
     merge(nums, l, mid, r);
@@ -29,7 +29,7 @@ void mergeSort(vector<int>& nums, int l, int r) {
 
 int main(int argc, char const *argv[])
 {
-    vector<int> nums = {4, 1, 3, 2};
+    vector<int> nums = {4, 1, 3, 2, 5, 6, 7};
     mergeSort(nums, 0, nums.size() - 1);
     for (auto n : nums) {
         cout << n << " ";
