@@ -1,0 +1,6 @@
+[submodule "ga-tsp"]
+	path = ga-tsp
+	url = https://github.com/kavinwkp/ga-tsp.git
+[submodule "notch-hsr-eetc"]
+	path = notch-hsr-eetc
+	url = https://github.com/kavinwkp/notch-hsr-eetc.git
