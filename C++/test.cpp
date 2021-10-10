@@ -2,6 +2,9 @@
 #include <vector>
 #include <queue>
 #include <unordered_set>
+#include <algorithm>
+#include <random>
+#include <ctime>
 using namespace std;
 
 struct ListNode {
@@ -103,7 +106,21 @@ int main(int argc, char const *argv[])
     // auto it = hash.find(10);
     // cout << sizeof(it) << endl;
     // cout << sizeof(short) << endl;
-    vector<int> res;
-    cout << res.empty() << endl;
+    vector<int> test = {1, 20, 3, 9, 100};
+    test.insert(test.begin() + 4, -1);
+    // cout << *max_element(test.begin(), test.end()) << endl;
+    // mt19937 rnd((unsigned)time(0));
+    // for (int i = 0; i < 10; i++) {
+    //     uniform_int_distribution<> dist(0, test.size() - 1);
+    //     cout << dist(rnd) << endl;
+    // }
+        
+    // shuffle(test.begin(), test.end(), rnd);
+    for (auto t : test) 
+        cout << t << " ";
+    cout << endl;
+
+    // float num = 0.0000002;
+    // cout << (fabs(num - 0.0) > 1e-6) << endl;
     return 0;
 }
