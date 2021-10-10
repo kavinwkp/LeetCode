@@ -4,3 +4,6 @@
 [submodule "Projects/Train/Notch"]
 	path = Projects/Train/Notch
 	url = https://github.com/kavinwkp/notch-hsr-eetc.git
+[submodule "Projects/GA-VRP"]
+	path = Projects/GA-VRP
+	url = https://github.com/byx2000/VRP-GA.git
