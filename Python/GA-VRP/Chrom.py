@@ -1,10 +1,5 @@
 from math import fabs
-from re import U
-from time import time
-
-from pkg_resources import to_filename
 from VRP import VRP
-from Node import Node
 import random
 
 class Chrom:
