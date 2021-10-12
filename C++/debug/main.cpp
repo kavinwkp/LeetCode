@@ -57,9 +57,8 @@ int main()
 	{
 		fin >> capacity[i] >> disLimit[i];
 	}
-
-	int chromesNum = 100;
-	int iteration = 100;
+	int chromesNum = 200;
+	int iteration = 1000;
 	Solve(chromesNum, iteration, cNode + 1, x, y, demand, cCar, capacity, disLimit, 100, 1, 1, Callback);
 
 	return 0;
