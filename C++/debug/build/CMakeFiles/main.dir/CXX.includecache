@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kavin/algorithm/LeetCode/C++/debug/include/Export.h
+
+/home/kavin/algorithm/LeetCode/C++/debug/main.cpp
+iostream
+-
+fstream
+-
+include/Export.h
+/home/kavin/algorithm/LeetCode/C++/debug/include/Export.h
+

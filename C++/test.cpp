@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <random>
 #include <ctime>
+#include <cmath>
 using namespace std;
 
 struct ListNode {
@@ -69,6 +70,10 @@ ListNode* getListNode(vector<int>& nums) {
     return dummy->next;
 }
 
+double dist(double x1, double y1, double x2, double y2) {
+    return sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+}
+
 int main(int argc, char const *argv[])
 {
     // vector<int> nums = {1, 2, 3, 4};
@@ -106,8 +111,8 @@ int main(int argc, char const *argv[])
     // auto it = hash.find(10);
     // cout << sizeof(it) << endl;
     // cout << sizeof(short) << endl;
-    vector<int> test = {1, 20, 3, 9, 100};
-    test.insert(test.begin() + 4, -1);
+    // vector<int> test = {1, 20, 3, 9, 100};
+    // test.insert(test.begin() + 4, -1);
     // cout << *max_element(test.begin(), test.end()) << endl;
     // mt19937 rnd((unsigned)time(0));
     // for (int i = 0; i < 10; i++) {
@@ -116,11 +121,28 @@ int main(int argc, char const *argv[])
     // }
         
     // shuffle(test.begin(), test.end(), rnd);
-    for (auto t : test) 
-        cout << t << " ";
-    cout << endl;
+    // for (auto t : test) 
+    //     cout << t << " ";
+    // cout << endl;
 
     // float num = 0.0000002;
     // cout << (fabs(num - 0.0) > 1e-6) << endl;
+    double d1 = dist(14.36, 8.22, 15.58, 7.1);
+    double d2 = dist(15.58, 7.1, 20.3, 10);
+    double d3 = dist(20.3, 10, 14.36, 8.22);
+    cout << d1 << endl;
+    cout << d2 << endl;
+    cout << d3 << endl;
+    cout << d1 + d2 + d3 << endl;
+    cout << endl;
+    double d4 = dist(14.36, 8.22, 16.92, 5.3);
+    double d5 = dist(16.92, 5.3, 10.26, 6.08);
+    double d6 = dist(10.26, 6.08, 14.36, 8.22);
+    cout << d4 << endl;
+    cout << d5 << endl;
+    cout << d6 << endl;
+    cout << d4 + d5 + d6 << endl;
+    cout << endl;
+    cout << dist(14.36, 8.22, 17.54, 14.12) * 2 << endl;
     return 0;
 }
