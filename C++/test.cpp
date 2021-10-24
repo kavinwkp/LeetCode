@@ -127,22 +127,5 @@ int main(int argc, char const *argv[])
 
     // float num = 0.0000002;
     // cout << (fabs(num - 0.0) > 1e-6) << endl;
-    double d1 = dist(14.36, 8.22, 15.58, 7.1);
-    double d2 = dist(15.58, 7.1, 20.3, 10);
-    double d3 = dist(20.3, 10, 14.36, 8.22);
-    cout << d1 << endl;
-    cout << d2 << endl;
-    cout << d3 << endl;
-    cout << d1 + d2 + d3 << endl;
-    cout << endl;
-    double d4 = dist(14.36, 8.22, 16.92, 5.3);
-    double d5 = dist(16.92, 5.3, 10.26, 6.08);
-    double d6 = dist(10.26, 6.08, 14.36, 8.22);
-    cout << d4 << endl;
-    cout << d5 << endl;
-    cout << d6 << endl;
-    cout << d4 + d5 + d6 << endl;
-    cout << endl;
-    cout << dist(14.36, 8.22, 17.54, 14.12) * 2 << endl;
     return 0;
 }
