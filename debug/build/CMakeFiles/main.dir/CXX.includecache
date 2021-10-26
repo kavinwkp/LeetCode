@@ -6,13 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/kavin/algorithm/LeetCode/debug/src/Export/Export.h
-
-/home/kavin/algorithm/LeetCode/debug/src/main.cpp
+/home/kavin/algorithm/LeetCode/debug/main.cpp
 iostream
 -
-fstream
--
-Export/Export.h
-/home/kavin/algorithm/LeetCode/debug/src/Export/Export.h
 
