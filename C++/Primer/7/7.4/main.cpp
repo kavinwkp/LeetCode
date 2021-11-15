@@ -73,10 +73,11 @@ void Window_mgr::clear(ScreenIndex i) {
 
 int main(int argc, char const *argv[])
 {
-    Screen myScreen(3, 3, 'X');
-    myScreen.move(1, 1).set('#').display(cout);
-    cout << endl;
-    myScreen.display(cout);
-    cout << endl;
+    Screen::pos ht = 3, wd = 3;
+    Screen scr(ht, wd, 'X');
+    Screen *p = &scr;
+    char c = scr.get();
+    cout << c << endl;
+    p->display(cout);
     return 0;
 }
