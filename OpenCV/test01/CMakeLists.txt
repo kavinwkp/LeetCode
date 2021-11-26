@@ -13,6 +13,9 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS} )
 # include_directories(${realsense2_INCLUDE_DIRS})
 
-add_executable(main main.cpp)
+# add_executable(main main.cpp)
 
-target_link_libraries(main ${OpenCV_LIBS})
+# target_link_libraries(main ${OpenCV_LIBS})
+add_executable(main1 main1.cpp)
+
+target_link_libraries(main1 ${OpenCV_LIBS})
