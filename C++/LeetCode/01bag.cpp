@@ -21,3 +21,6 @@ int main(int argc, char const *argv[])
     }
     return 0;
 }
+// 0 15 15 15 15 
+// 0 15 15 20 35 
+// 0 15 15 20 35 
