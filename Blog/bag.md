@@ -117,3 +117,28 @@ int main(int argc, char const *argv[]) {
 // 0 15 15 20 35 
 ```
 
+### 完全背包
+
+完全背包在01背包的基础上，将物品数量改为N件，所以只需要修改遍历背包的顺序即可，从前往后遍历
+
+```cpp
+int main(int argc, char const *argv[]) {
+    vector<int> weight = {1, 3, 4};
+    vector<int> value = {15, 20, 30};
+
+    int bagWeight = 4;
+    vector<int> dp(bagWeight + 1, 0);
+
+    for (int i = 0; i < weight.size(); i++) {
+        for (int j = weight[i]; j <= bagWeight; j++) {
+            dp[j] = max(dp[j], dp[j - weight[i]] + value[i]);
+        }
+    }
+    return 0;
+}
+// 0 15 30 45 60 
+// 0 15 30 45 60 
+// 0 15 30 45 60 
+```
+
+既然可以从前往后遍历，`dp`的状态又只跟前面的状态有关，所以先遍历物品或者先遍历背包容量就都可以了
