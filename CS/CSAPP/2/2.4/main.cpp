@@ -31,6 +31,7 @@ int main() {
     // printf("%.30f\n", *y2);
     // show_float(*y2);
     float y2 = 0.99999998;
+    show_float(y2);
     if (*y == y2) printf("Yes\n");
     else printf("No\n");
     return 0;
