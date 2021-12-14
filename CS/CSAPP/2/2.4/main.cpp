@@ -26,6 +26,13 @@ int main() {
     float *y = (float*)&x;
     printf("%f\n", *y);
     show_float(*y);
+    int x2 = 0x3f7fffff;
+    float *y2 = (float*)&x2;
+    printf("%.30f\n", *y2);
+    show_float(*y2);
     return 0;
 }
-//  67 45 23 01
+1.000000
+ 00 00 80 3f
+0.999999940395355224609375000000
+ ff ff 7f 3f
