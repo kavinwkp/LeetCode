@@ -24,15 +24,18 @@ int main() {
     // show_float(y);
     int x = 0x3f800000;
     float *y = (float*)&x;
-    printf("%f\n", *y);
+    printf("%.30f\n", *y);
     show_float(*y);
-    int x2 = 0x3f7fffff;
-    float *y2 = (float*)&x2;
-    printf("%.30f\n", *y2);
-    show_float(*y2);
+    // int x2 = 0x3f7fffff;
+    // float *y2 = (float*)&x2;
+    // printf("%.30f\n", *y2);
+    // show_float(*y2);
+    float y2 = 0.99999998;
+    if (*y == y2) printf("Yes\n");
+    else printf("No\n");
     return 0;
 }
-1.000000
- 00 00 80 3f
-0.999999940395355224609375000000
- ff ff 7f 3f
+// 1.000000
+//  00 00 80 3f
+// 0.999999940395355224609375000000
+//  ff ff 7f 3f
