@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cstring>
 using namespace std;
 
 class Quote {
@@ -21,10 +21,10 @@ protected:
 class Bulk_quote : public Quote {
 public:
     Bulk_quote() = default;
-    Bulk_quote(const std::sting&, double, std::size_t, double);
+    Bulk_quote(const std::string&, double, std::size_t, double);
     double net_price(std::size_t) const override;
-privete:
-    srd::size_t min_qty = 0;    // 使用折扣额的最低购买量
+private:
+    std::size_t min_qty = 0;    // 使用折扣额的最低购买量
     double discount = 0.0;  // 以小数表示的折扣额
 };
 
@@ -38,9 +38,15 @@ double Bulk_quote::net_price(std::size_t cnt) const {
     else return cnt * price;
 }
 
+double print_total(ostream& os, const Quote& item, size_t n) {
+    double ret = item.net_price(n);
+    os << "isbn: " << item.isbn() << " #sold: " << n << " total due: " << ret << endl;
+    return ret;
+}
+
 int main() {
 
     Quote q("c++primer", 12);
-    cout << q.isbn() << endl;
+    print_total(cout, q, 10);
     return 0;
 }
