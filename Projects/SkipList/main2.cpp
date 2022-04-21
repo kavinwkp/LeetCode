@@ -1,5 +1,5 @@
 #include <iostream>
-#include "test_2.h"
+#include "SkipList.h"
 using namespace std;
 
 void test3() {
@@ -18,11 +18,24 @@ void test3() {
     skiplist.delete_element(3);
     skiplist.search_element(3);
     skiplist.display_list();
+    vector<pair<int, string>> res = skiplist.get_element();
+    for (auto& p : res) {
+        cout << p.first << ":" << p.second << endl;
+    }
+    // skiplist.dump_file();
+    
+}
 
+void test4() {
+    // 测试文件读取
+    SkipList<string, string> skiplist(5);
+    skiplist.load_file();
+    skiplist.display_list();
 }
 
 int main(int argc, char const *argv[])
 {
     test3();
+    // test4();
     return 0;
 }
