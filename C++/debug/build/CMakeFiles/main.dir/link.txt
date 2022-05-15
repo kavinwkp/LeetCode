@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/main.dir/main.cpp.o  -o main  -L/home/kavin/algorithm/LeetCode/C++/debug/lib -Wl,-rpath,/home/kavin/algorithm/LeetCode/C++/debug/lib -lVRP 

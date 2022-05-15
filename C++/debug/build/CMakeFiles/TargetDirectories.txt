@@ -1,3 +1,0 @@
-/home/kavin/algorithm/LeetCode/C++/debug/build/CMakeFiles/rebuild_cache.dir
-/home/kavin/algorithm/LeetCode/C++/debug/build/CMakeFiles/main.dir
-/home/kavin/algorithm/LeetCode/C++/debug/build/CMakeFiles/edit_cache.dir
