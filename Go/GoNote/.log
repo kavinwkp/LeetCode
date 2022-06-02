@@ -1,0 +1,7 @@
+INFO: 2022/05/26 22:15:25 /home/kavin/Documents/GoProjects/GoNote/note/std.go:323: 出错了
+INFO: 2022/05/26 22:16:32 /home/kavin/Documents/GoProjects/GoNote/note/std.go:323: 出错了
+WARN: 2022/05/26 22:16:32 /home/kavin/Documents/GoProjects/GoNote/note/std.go:324: 出错了
+INFO: 2022/05/26 22:16:49 /home/kavin/Documents/GoProjects/GoNote/note/std.go:323: 出错了
+WARN: 2022/05/26 22:16:49 /home/kavin/Documents/GoProjects/GoNote/note/std.go:324: 出错了
+INFO: 2022/05/26 22:17:29 /home/kavin/Documents/GoProjects/GoNote/note/std.go:323: 出错了
+ERR: 2022/05/26 22:17:29 /home/kavin/Documents/GoProjects/GoNote/note/std.go:325: 出错了
